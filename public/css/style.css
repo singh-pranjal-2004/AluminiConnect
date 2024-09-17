@@ -549,7 +549,7 @@ nav ul li a:hover {
 .img-div-2 {
   width: 100%;
   height: 100%;
-  background-image: url(./Assets/Images/Graph.png);
+  background-image: url(../Assets/images/Graph.png);
   background-size: cover;
   background-position: center;
   border-radius: 30px;
@@ -570,7 +570,7 @@ nav ul li a:hover {
 .left-img-2 {
   width: 75%;
   height: 60vh;
-  background-image: url(../images/unsplash.avif);
+  background-image: url(../Assets/images/unsplash.avif);
   background-size: cover;
   background-position: center;
   border-radius: 30px;
@@ -758,34 +758,34 @@ nav ul li a:hover {
 }
 
 .img-t-elem-1 {
-  background-image: url(../images/amar.jpg);
+  background-image: url(../Assets/images/amar.jpg);
   background-size: 150%;
 }
 
 .img-t-elem-2 {
-  background-image: url(../images/Mayuri.jpeg);
+  background-image: url(../Assets/images/Mayuri.jpeg);
   background-size: 150%;
   background-position: top;
 }
 .img-t-elem-3 {
-  background-image: url(../images/alll.jpg);
+  background-image: url(../Assets/images/alll.jpg);
   background-size: 150%;
   background-position: top;
 }
 .img-t-elem-4 {
-  background-image: url(../images/Harsh.jpg);
+  background-image: url(../Assets/images/Harsh.jpg);
   background-size: 150%;
   background-position: top;
 }
 
 .img-t-elem-5 {
-  background-image: url(../images/Rites.jpeg);
+  background-image: url(../Assets/images/Rites.jpeg);
   background-size: 120%;
   /* background-position: top; */
 }
 
 .img-t-elem-6 {
-  background-image: url(../images/shubham.jpeg);
+  background-image: url(../Assets/images/shubham.jpeg);
   background-size: 180%;
   /* background-position: top; */
 }
