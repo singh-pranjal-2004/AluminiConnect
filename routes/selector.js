@@ -4,7 +4,7 @@ const router = express.Router();
 
 // Serve the dropdown page
 router.get('/', (req, res) => {
-    res.render('dropdown');  // Renders the dropdown.ejs view
+    res.render('index');  // Renders the dropdown.ejs view
 });
 
 // Handle the dropdown selection
