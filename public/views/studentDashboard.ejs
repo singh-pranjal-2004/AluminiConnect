@@ -12,6 +12,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../Assets/favicon.ico"/>
     <title>Home | AlumniConnect</title>
+    <style>
+        .ai-bot-icon {
+           position: fixed;
+           bottom: 20px;
+           right: 20px;
+           z-index: 1000;
+           cursor: pointer;
+           transition: transform 0.3s ease;
+       }
+
+       .ai-bot-icon img {
+           width: 70px;
+           /* Adjust the size of the icon as needed */
+           border-radius: 60%;
+           /* Make the icon circular */
+           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+           /* Add a shadow effect */
+       }
+
+       .ai-bot-icon:hover {
+           transform: scale(1.1);
+           /* Zoom in slightly on hover */
+       }
+       #ai-bot-iframe{
+           display: none;
+       }
+       
+   </style>
 </head>
 <body class="bg-eee">
     <div class="page d-flex bg-eee">
@@ -41,20 +69,20 @@
                     </a>
                 </li>
                 <li>
-                    <a href="stories.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                    <a href="../views/stories.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
                         <i class="fa-solid fa-diagram-project fa-fw mr-10"></i>
                          <span class="hide-mobile">Stories</span>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="courses.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
-                        <!-- <i class="fa-solid fa-graduation-cap fa-fw mr-10"></i> -->
+                        <i class="fa-solid fa-graduation-cap fa-fw mr-10"></i>
                         <i class="fa-regular fa-calendar-days"></i> 
                     
-                        <!-- <span class="hide-mobile" style="margin-left: 15px;">Events</span> -->
+                        <span class="hide-mobile" style="margin-left: 15px;">Events</span>
                         <span class="hide-mobile" style="margin-left: 15px;">Events</span>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="friends" class="fs-14 rad-6 d-flex align-center c-black p-10">
                         <!--  <i class="fa-regular fa-circle-user fa-fw mr-10"></i> -->
@@ -77,7 +105,7 @@
                     </a>
                 </li> 
                 <li>
-                    <a href="http://localhost:4000/" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                    <a href="http://localhost:3500/" class="fs-14 rad-6 d-flex align-center c-black p-10">
                         <i class="fa-solid fa-user-tie"></i>
                          <span class="hide-mobile" style="margin-left: 15px;">Job</span>
                     </a>
@@ -106,6 +134,10 @@
             </div>
             <!-- End Content Head -->
             <h1 class="p-relative">Home</h1>
+            <a href="#" class="ai-bot-icon" onclick="toggleIframe()">
+                <iframe id="ai-bot-iframe" width="350" height="430" display="none" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/b08cda45-66d5-44f2-977d-8d0bca3a450f"></iframe>
+                <img id="image" src="../Assets/imgs/aibot.png" alt="AI Bot Icon" width="100">
+            </a>
             <!-- Wrapper -->
             <div class="wrapper d-grid gap-20">
                 <!-- Welcome Widget -->
@@ -599,5 +631,20 @@
         </div>
         <!-- End Content -->
     </div>
+    <script>
+        // Function to toggle the display of the iframe
+        function toggleIframe() {
+            var iframe = document.getElementById('ai-bot-iframe');
+            var img = document.getElementById('image');
+            
+            // Toggle the iframe visibility
+            if (iframe.style.display === "none") {
+                iframe.style.display = "inline-flex"; // Show the iframe
+                // img.style.display = "none";
+            } else {
+                iframe.style.display = "none";  // Hide the iframe
+            }
+        }
+    </script>
 </body>
 </html>

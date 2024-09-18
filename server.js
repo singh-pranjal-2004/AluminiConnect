@@ -58,6 +58,10 @@ app.get('/form', (req, res) => {
     res.redirect('http://127.0.0.1:5000');
 });
 
+app.get('/jobs', (req, res) => {
+    res.redirect('localhost:6000');
+});
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
