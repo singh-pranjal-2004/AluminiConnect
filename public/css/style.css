@@ -20,6 +20,14 @@
   font-family: Product Sans;
 }
 
+
+.btn-s{
+  background-color: black;
+}
+#but-s{
+  border: 2px solid white;
+}
+
 html,
 body {
   height: 100%;
@@ -69,7 +77,6 @@ nav {
   position: absolute;
   left: 50%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 1508px;
@@ -80,6 +87,74 @@ nav {
   border: 1px solid rgb(35 255 108);
   backdrop-filter: blur(1px);
   margin-top: 10vh;
+}
+
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  max-height: 80px;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.address, .contact-info {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.address p, .contact-info p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #35ff6c;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.text-center p {
+  margin: 0;
+}
+
+.text-center a {
+  color: #35ff6c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .btn-p {
