@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark container background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for contrast */
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.logo-img {
+    width: 100px; /* Set a consistent width */
+    height: 100px; /* Set a consistent height */
+    object-fit: cover; /* Ensure the image covers the entire circle */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 15px; /* Add some spacing below the logo */
+    display: block; /* Ensure the image is a block element */
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+    overflow: hidden; /* Hide any overflow if the image is larger than the circle */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* White color for headings */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #333; /* Darker border color */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333; /* Dark header background */
+    color: #ffffff; /* White text color for header */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #222; /* Darker row color */
+}
+
+tr:hover {
+    background-color: #333; /* Slightly lighter row color on hover */
+}
+
+td a {
+    color: #bb86fc; /* Light purple color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: #1e1e1e; /* Dark background for the card */
+    border: 1px solid #333; /* Dark border for the card */
+    border-radius: 8px;
+}
+
+.card-body {
+    color: #e0e0e0; /* Light text color for better readability */
+}
+
+.card-title {
+    color: #ffffff; /* White color for card titles */
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.card-subtitle {
+    color: #bb86fc; /* Light purple color for the company name */
+    font-size: 1rem;
+    margin-bottom: 10px; /* Space below the subtitle */
+}
+
+.card-text {
+    color: #e0e0e0; /* Light text color for job details */
+    font-size: 0.9rem;
+    margin-bottom: 10px; /* Space between text elements */
+}
+
+.btn-primary {
+    background-color: #6200ee; /* Primary button color */
+    border-color: #6200ee; /* Match button border with background */
+}
+
+.btn-primary:hover {
+    background-color: #3700b3; /* Darker shade for button hover */
+    border-color: #3700b3; /* Match button border with hover background */
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}

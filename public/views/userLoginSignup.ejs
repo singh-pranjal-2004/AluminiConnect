@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="../css/login.css">
-    <title>Login and Signup</title>
+    <link rel="shortcut icon" href="../Assets/favicon.ico"/>
+    <title>Student Login and Signup</title>
 </head>
 
 <body>
@@ -47,12 +48,12 @@
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
-                    <h1>Welcome Learner!</h1>
+                    <h1>Welcome Student!</h1>
                     <p>Enter your personal details to use all of site features</p>
                     <button class="hidden" id="login">Sign In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <h1>Hello, Learner!</h1>
+                    <h1>Hello, Student!</h1>
                     <p>Register with your personal details to use all of site features</p>
                     <button class="hidden" id="register">Sign Up</button>
                 </div>
@@ -91,7 +92,7 @@
 
                 const result = await response.json();
                 if (response.ok) {
-                    window.location.href = '/home';
+                    window.location.href = '/form';
                 } else {
                     document.getElementById('signupError').textContent = result.error;
                 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/css/main.css">
-    
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/css/framework.css">
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +17,10 @@
     <div class="page d-flex bg-eee">
         <!-- Sidebar -->
         <div class="sidebar bg-white p-20 p-relative">
-            <h3 class="p-relative text-center pb-15 mb-30 hide-mobile">AlumConnect</h3>
+            <h3 class="p-relative text-center pb-15 mb-30 hide-mobile">AlumniConnect</h3>
             <ul>
                 <li>
-                    <a href="index.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                    <a href="http://localhost:3000/home" class="fs-14 rad-6 d-flex align-center c-black p-10">
                         <!-- <i class="fa-regular fa-chart-bar fa-fw mr-10"></i> -->
                         <i class="fa-solid fa-house"></i>
                         <span class="hide-mobile" style="margin-left: 10px;">Home</span>
@@ -28,41 +28,47 @@
                 </li>
 
                 <li>
-                    <a href="profile.html" class="active fs-14 rad-6 d-flex align-center c-black p-10">
+                    <a href="#" class="active fs-14 rad-6 d-flex align-center c-black p-10">
                         <i class="fa-regular fa-user fa-fw mr-10"></i>
                         <span class="hide-mobile">Profile</span>
                     </a>
                 </li>
                 <li>
-                    <a href="stories.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                    <a href="http://localhost:3000/stories" class="fs-14 rad-6 d-flex align-center c-black p-10">
                         <i class="fa-solid fa-diagram-project fa-fw mr-10"></i>
                          <span class="hide-mobile">Stories</span>
                     </a>
                 </li>
                 <li>
-                    <a href="courses.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                    <a href="http://localhost:3000/courses" class="fs-14 rad-6 d-flex align-center c-black p-10">
                         <!-- <i class="fa-solid fa-graduation-cap fa-fw mr-10"></i> -->
                         <i class="fa-regular fa-calendar-days"></i>
                          <span class="hide-mobile" style="margin-left: 15px;">Events</span>
                     </a>
                 </li>
                 <li>
-                    <a href="friends.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                    <a href="http://localhost:3000/friends" class="fs-14 rad-6 d-flex align-center c-black p-10">
                         <!-- <i class="fa-regular fa-circle-user fa-fw mr-10"></i> -->
                         <i class="fa-solid fa-users"></i>
                          <span class="hide-mobile" style="margin-left: 10px;">AlumniHub</span>
                     </a>
                 </li>
                 <li>
-                    <a href="files.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
-                        <i class="fa-regular fa-file fa-fw mr-10"></i>
-                         <span class="hide-mobile">Connect</span>
+                    <a href="http://localhost:3000/files" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-solid fa-video"></i>
+                        <span class="hide-mobile" style="margin-left: 10px;">Connect</span>
                     </a>
                 </li>
                 <li>
-                    <a href="plans.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                    <a href="http://localhost:3000/plans" class="fs-14 rad-6 d-flex align-center c-black p-10">
                         <i class="fa-regular fa-credit-card fa-fw mr-10"></i>
                         <span class="hide-mobile">CodeBot</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:4000/" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-solid fa-user-tie"></i>
+                         <span class="hide-mobile" style="margin-left: 15px;">Job</span>
                     </a>
                 </li>
             </ul>
@@ -172,7 +178,7 @@
                                     <span class="fw-500 fs-15">{{ user_data[7] }}</span>
                                 </div>
                                 <div>
-                                    <span class="c-grey fw-500 fs-14">Years Of Experience:</span>
+                                    <span class="c-grey fw-500 fs-14">Years of experience:</span>
                                     <!-- <span class="fw-500 fs-15">5+</span> -->
                                     <span class="fw-500 fs-15">{{ user_data[8] }}</span>
                                 </div>
