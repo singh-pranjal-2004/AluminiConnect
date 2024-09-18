@@ -6,7 +6,7 @@ import fetch from 'node-fetch';
 import ObjectsToCsv from 'objects-to-csv';
 
 const app = express();
-const port = 6000;
+const port = 3500;
 
 app.use(express.static('public'));
 
