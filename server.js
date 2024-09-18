@@ -49,6 +49,7 @@ app.get('/profile', authenticateToken, (req, res) => {
     res.render('profile');
 });
 
+
 app.get('/friends', authenticateToken, (req, res) => {
     res.render('friends');
 });
