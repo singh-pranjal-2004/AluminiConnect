@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/framework.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Friends</title>
+</head>
+<body class="bg-eee">
+    <div class="page d-flex bg-eee">
+        <!-- Sidebar -->
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative text-center pb-15 mb-30 hide-mobile">AlumConnect</h3>
+            <ul>
+                <li>
+                    <a href="home" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <!-- <i class="fa-regular fa-chart-bar fa-fw mr-10"></i> -->
+                        <i class="fa-solid fa-house"></i>
+                        <span class="hide-mobile" style="margin-left: 10px;">Home</span>
+                    </a>
+                </li>
+<!--                 <li>
+                    <a href="settings.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-solid fa-gear fa-fw mr-10"></i>
+                        <span class="hide-mobile">Settings</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="profile" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-regular fa-user fa-fw mr-10"></i>
+                        <span class="hide-mobile">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="stories.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-solid fa-diagram-project fa-fw mr-10"></i>
+                         <span class="hide-mobile">Stories</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <!-- <i class="fa-solid fa-graduation-cap fa-fw mr-10"></i> -->
+                        <i class="fa-regular fa-calendar-days"></i>
+                         <span class="hide-mobile" style="margin-left: 15px;">Events</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html" class="active fs-14 rad-6 d-flex align-center c-black p-10">
+                        <!-- <i class="fa-regular fa-circle-user fa-fw mr-10"></i> -->
+                        <i class="fa-solid fa-users"></i>
+                         <span class="hide-mobile" style="margin-left: 10px;">AlumniHub</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-regular fa-file fa-fw mr-10"></i>
+                         <span class="hide-mobile">Connect</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-regular fa-credit-card fa-fw mr-10"></i>
+                        <span class="hide-mobile">CodeBot</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Sidebar -->
+        <!-- Content -->
+        <div class="content w-full">
+            <!-- Content Head -->
+            <div class="head p-20 p-10-mobile bg-white between-flex">
+                <div class="search p-relative">
+                    <input class="p-10 rad-10" type="search" placeholder="Type A Keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <a href="#" class="mr-15 p-relative"><i class="fa-regular fa-bell fa-lg"></i></a>
+                    <img src="./imgs/avatar.png">
+                </div>
+            </div>
+            <!-- End Content Head -->
+            <h1 class="p-relative">AlumniHub</h1>
+            <div class="friends-page wrapper pb-20 m-20 d-grid gap-20">
+                <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-1.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Akash Dogra</h3>
+                        <span class="fs-13 c-grey fw-500">JavaScript Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 5+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Accenture||Google||Amazon</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Ranchi, Jharkhand, India</span>
+                        </div>
+                        <span class="vip fw-bold c-orange">VIP</span>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 02/10/2024</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-2.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Kashish Pratap</h3>
+                        <span class="fs-13 c-grey fw-500">Cloud Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 11+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Atlassian||Google||Oracle</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Jaipur, Rajasthan, India</span>
+                        </div>
+                        <span class="vip fw-bold c-orange">VIP</span>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 02/08/2013</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-3.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Md. Akram</h3>
+                        <span class="fs-13 c-grey fw-500">Mobile Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 3+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>OnDemand||Oracle||Amazon</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Durgapur, West Bengal, India</span>
+                        </div>
+                        <span class="vip fw-bold c-orange">VIP</span>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 02/06/2020</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-4.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Reena Thakur</h3>
+                        <span class="fs-13 c-grey fw-500">Back-End Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 5+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Flipkart</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Indore, Madhya Pradesh, India</span>
+                        </div>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 28/06/2018</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-5.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Vikash Sharma</h3>
+                        <span class="fs-13 c-grey fw-500">Algorithm Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 6+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Zomato||Capgemini</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Delhi, India</span>
+                        </div>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 28/08/2024</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-6.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Nirbhik Yadav</h3>
+                        <span class="fs-13 c-grey fw-500">Back-End Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 4+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Google</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Kanpur, Uttar Pradesh, India</span>
+                        </div>
+                        <span class="vip fw-bold c-orange">VIP</span>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 28/06/2023</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-7.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Aman Agrawal</h3>
+                        <span class="fs-13 c-grey fw-500">Cloud Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 5+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Oracle||Salesforce||Google</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Ranchi, Jharkhand, India</span>
+                        </div>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 02/08/2024</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-05.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Anita Sharma</h3>
+                        <span class="fs-13 c-grey fw-500">Content Creator</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 2+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Figma||Microsoft</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Patna, Bihar, India</span>
+                        </div>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 28/08/2022</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-01.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Gunjan Sharma</h3>
+                        <span class="fs-13 c-grey fw-500">JavaScript Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Accenture||TCS</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Rourkela, Orissa, India</span>
+                        </div>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 02/10/2020</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="friend p-20 rad-6 bg-white p-relative">
+                    <div class="contact d-flex gap-5 align-center">
+                        <i class="fa-solid fa-phone p-10 rad-half bg-eee fs-13"></i>
+                        <i class="fa-regular fa-envelope p-10 rad-half bg-eee fs-13"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="./imgs/friend-03.jpg" class="avatar rad-half mt-20 mb-10">
+                        <h3 class="fs-16 fw-600 mb-5">Harry</h3>
+                        <span class="fs-13 c-grey fw-500">Front-End Developer</span>
+                    </div>
+                    <div class="info p-relative mt-15 mb-15 pt-15 pb-15">
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-regular fa-face-smile fa-fw"></i>
+                            <span>years of Experience: 5+</span>
+                        </div>
+                        <div class="mb-10 fs-14 fw-500">
+                            <i class="fa-solid fa-code-commit fa-fw"></i>
+                            <span>Kaggle||Leetcode</span>
+                        </div>
+                        <div class="fs-14 fw-500">
+                            <i class="fa-regular fa-newspaper fa-fw"></i>
+                            <span>Delhi, India</span>
+                        </div>
+                    </div>
+                    <div class="foot between-flex gap-10 flex-column-mobile">
+                        <span class="c-grey fs-13 fw-500">Joined 02/06/2020</span>
+                        <div>
+                            <a href="./profile.html" class="btn-shape bg-blue c-white fs-13">Profile</a>
+                            <a href="#" class="btn-shape bg-red c-white fs-13">Remove</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- End Content -->
+    </div>
+</body>
+</html>

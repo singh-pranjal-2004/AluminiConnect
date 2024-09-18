@@ -42,7 +42,15 @@ app.get('/addmoredetails', authenticateToken, (req, res) => {
 });
 
 app.get('/home', authenticateToken, (req, res) => {
-    res.render('home');
+    res.render('studentDashboard');
+});
+
+app.get('/profile', authenticateToken, (req, res) => {
+    res.render('profile');
+});
+
+app.get('/friends', authenticateToken, (req, res) => {
+    res.render('friends');
 });
 
 // Start the server
