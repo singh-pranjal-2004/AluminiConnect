@@ -104,6 +104,39 @@ nav {
   color: #fff;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-option {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  font-size: large;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: white;
+  color: black;
+}
+
 .slideUp {
   -webkit-transform: translateY(-100px);
   transform: translateY(-100px);

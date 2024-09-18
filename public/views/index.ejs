@@ -21,13 +21,12 @@
             <li class="nav-item px-4"><a class="nav-link fw-semibold" href="#event">Events</a></li>
             <li class="nav-item px-4"><a class="nav-link fw-semibold" href="events.html">FAQ's</a></li>
         </ul>
-        <div class="btn-nav d-flex">
+        <!-- <div class="btn-nav d-flex">
             <button type="button" class="btn-p">Try for free</button>
             <div class="dropdown">
                 <button type="button" class="btn-s">Sign In</button>
                 <div class="dropdown-content">
                     <form action="/select" method="POST">
-                        <!-- <label for="userType">Choose a type:</label> -->
                         <select name="userType" id="userType">
                             <option value="user">User</option>
                             <option value="alumni">Alumni</option>
@@ -36,7 +35,33 @@
                     </form>
                 </div>
             </div>
+        </div> -->
+
+        <!-- <div class="btn-nav d-flex">
+          <button type="button" class="btn-p">Try for free</button>
+          <div class="dropdown">
+            <button type="button" class="btn-s">Sign In</button>
+            <div class="dropdown-content">
+              <select name="userType" id="userType" class="btn-s">
+                <option value="/userLoginSignup">User</option>
+                <option value="/alumniLoginSignup">Alumni</option>
+              </select>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="btn-nav d-flex">
+          <button type="button" class="btn-p">Try for free</button>
+          <div class="dropdown">
+            <button type="button" class="btn-s">Sign In</button>
+            <div class="dropdown-content">
+              <button class="dropdown-option" data-link="/userLoginSignup"><b>User</b></button>
+              <button class="dropdown-option" data-link="/alumniLoginSignup"><b>Alumni</b></button>
+            </div>
+          </div>
         </div>
+        
+        
         <i class="ri-menu-3-line"></i>
     </nav>
     <div class="nav-phone d-flex">

@@ -222,3 +222,20 @@ function loaderAnimation() {
 
 // Call the loader animation function when the script runs
 loaderAnimation();
+
+// select option for login
+// document.getElementById('userType').addEventListener('change', function() {
+//   const selectedValue = this.value;
+//   if (selectedValue) {
+//     window.location.href = selectedValue;
+//   }
+// });
+
+document.querySelectorAll('.dropdown-option').forEach(button => {
+  button.addEventListener('click', function() {
+    const link = this.getAttribute('data-link');
+    if (link) {
+      window.location.href = link;
+    }
+  });
+});
