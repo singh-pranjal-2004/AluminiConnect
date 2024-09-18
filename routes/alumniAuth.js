@@ -19,11 +19,17 @@ router.post('/signup', async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, 10);
         const newAlumni = new Alumni({ name, email, password: hashedPassword });
         await newAlumni.save();
+
+        // Generate JWT token after successful signup
+        const token = jwt.sign({ email: newAlumni.email }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        res.cookie('token', token, { httpOnly: true });
+
         res.status(200).json({ success: true });
     } catch (err) {
         res.status(500).json({ error: 'Error during signup' });
     }
 });
+
 
 // Alumni login route
 router.post('/login', async (req, res) => {

@@ -18,12 +18,16 @@ router.post('/signup', async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, 10);
         const newUser = new User({ name, email, password: hashedPassword });
         await newUser.save();
+
+        // Generate JWT token after successful signup
+        const token = jwt.sign({ email: newUser.email }, process.env.JWT_SECRET, { expiresIn: '1h' });
+        res.cookie('token', token, { httpOnly: true });
+
         res.status(201).json({ message: 'Signup successful' });
     } catch (err) {
         res.status(500).json({ error: 'Error during signup' });
     }
 });
-
 
 // User login route
 router.post('/login', async (req, res) => {
